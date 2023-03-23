@@ -11,7 +11,8 @@ def count_up(start, stop):
         6
         7
     """
-
+    for number in range(start,stop+1):
+        print(number)
     # YOUR CODE HERE
 
 

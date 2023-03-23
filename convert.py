@@ -16,6 +16,12 @@ def convert_temp(unit_in, unit_out, temp):
     """
 
     # YOUR CODE HERE
+    if unit_in == "c":
+        return (f"{round(((temp * 9/5)+ 32), 1)}F")
+    elif unit_in == "f":
+        return (f"{round(((temp - 32) * 5/9), 1)}C")
+    else: return (f"Invalid unit {unit_in}")
+    
 
 
 print("c", "f", 0, convert_temp("c", "f", 0), "should be 32.0")
